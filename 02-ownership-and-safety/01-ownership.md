@@ -145,14 +145,20 @@ let s1 = String::from("hello");
 ```
 
 Memory layout:
-```
-Stack (s1):           Heap:
-+-----------+        +---+---+---+---+---+
-| ptr       | -----> | h | e | l | l | o |
-| len: 5    |        +---+---+---+---+---+
-| capacity: 5|
-+-----------+
-```
+
+| Stack (s1) | |
+|---|---|
+| ptr | -----> Heap |
+| len | 5 |
+| capacity | 5 |
+
+| Heap offset | Value |
+|---|---|
+| 0 | h |
+| 1 | e |
+| 2 | l |
+| 3 | l |
+| 4 | o |
 
 - The stack frame holds the pointer, length, and capacity
 - The heap holds the actual character data
