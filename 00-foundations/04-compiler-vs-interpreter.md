@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # Compiler vs Interpreter
 

@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # Ownership
 
@@ -32,6 +32,8 @@ Step by step:
 This is deterministic. You know exactly when memory is freed: when the owner leaves scope.
 
 ## Rule 3: Move Semantics
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust ownership move semantics stack heap pointer diagram
 
 ```rust
 fn main() {
@@ -116,6 +118,8 @@ fn main() {
 ```
 
 ## What Is Happening in Memory
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust String memory layout stack ptr len capacity heap
 
 ```
 let s1 = String::from("hello");

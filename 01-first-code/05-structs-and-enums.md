@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # Structs and Enums
 

@@ -1,4 +1,4 @@
-`[Mid]`
+``
 
 # Async Rust
 
@@ -7,6 +7,8 @@ Async Rust lets your program do other work while waiting for I/O operations (net
 ## Why Async
 
 A synchronous server handles one request at a time:
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — synchronous vs asynchronous server request timeline diagram
 
 ```
 Request 1: [wait for database] [send response]

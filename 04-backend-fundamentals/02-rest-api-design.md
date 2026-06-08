@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # REST API Design
 

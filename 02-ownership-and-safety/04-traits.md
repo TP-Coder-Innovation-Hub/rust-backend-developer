@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # Traits
 
@@ -191,6 +191,8 @@ Step by step:
 - `dyn Summary` — dynamic dispatch. The method to call is determined at runtime.
 
 ### Static vs Dynamic Dispatch
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust static dispatch vs dynamic dispatch vtable monomorphization
 
 | Property | Generics (static) | Trait objects (dynamic) |
 |----------|-------------------|------------------------|

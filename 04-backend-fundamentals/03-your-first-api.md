@@ -1,4 +1,4 @@
-`[Mid]`
+``
 
 # Your First API
 

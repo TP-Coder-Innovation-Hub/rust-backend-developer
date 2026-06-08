@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # References and Borrowing
 
@@ -57,6 +57,8 @@ Step by step:
 The `&mut` symbol means "borrow this value for writing."
 
 ## The Borrow Rules
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust borrow checker rules multiple immutable OR one mutable reference
 
 These two rules are enforced at compile time:
 

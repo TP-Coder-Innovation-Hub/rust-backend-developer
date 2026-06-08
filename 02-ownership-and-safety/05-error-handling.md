@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # Error Handling
 

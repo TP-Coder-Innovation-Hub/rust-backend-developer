@@ -1,4 +1,4 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # Crates and Modules
 

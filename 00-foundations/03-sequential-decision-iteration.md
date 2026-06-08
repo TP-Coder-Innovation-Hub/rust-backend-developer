@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # Sequential, Decision, Iteration
 

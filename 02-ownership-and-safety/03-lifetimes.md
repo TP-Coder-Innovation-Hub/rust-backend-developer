@@ -1,10 +1,12 @@
-`[Mid]`
+``
 
 # Lifetimes
 
 Lifetimes are Rust's way of ensuring references are always valid. The compiler tracks how long each reference lives. Most of the time, you do not need to annotate lifetimes — the compiler figures them out. But sometimes you must be explicit.
 
 ## The Problem Lifetimes Solve
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust lifetimes scope diagram preventing dangling reference
 
 ```rust
 fn main() {

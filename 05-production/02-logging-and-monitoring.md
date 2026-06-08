@@ -1,4 +1,4 @@
-`[Mid]`
+``
 
 # Logging and Monitoring
 

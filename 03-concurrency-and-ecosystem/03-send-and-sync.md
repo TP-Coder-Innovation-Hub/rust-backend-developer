@@ -1,4 +1,4 @@
-`[Mid]` `[Senior]`
+`` ``
 
 # Send and Sync
 
@@ -50,6 +50,8 @@ fn main() {
 ```
 
 `Rc` (Reference Counted) is a single-threaded reference-counted pointer. It is not thread-safe because its reference count is not atomic. Two threads incrementing the count simultaneously would cause a data race.
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust Rc vs Arc thread safety single thread multi thread diagram
 
 Fix: use `Arc` (Atomic Reference Counted) instead:
 

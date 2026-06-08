@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # Memory Management Basics
 
@@ -46,6 +46,8 @@ ADD 3 TO list                    // heap grows more
 Values with size that changes at runtime go on the heap: strings (users can type any length), dynamic lists, large data structures.
 
 ### Stack vs Heap Comparison
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — stack vs heap memory layout diagram program execution
 
 | Property | Stack | Heap |
 |----------|-------|------|

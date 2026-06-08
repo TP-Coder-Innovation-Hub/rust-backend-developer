@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # What Is Rust
 
@@ -26,6 +26,8 @@ Rust's tagline is "memory safety without garbage collection." This means:
 These guarantees are enforced at compile time. If your code would cause one of these bugs, it does not compile. No runtime cost for the checks.
 
 ## Zero-Cost Abstractions
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust zero cost abstractions high level to machine code
 
 Rust's abstractions (generics, iterators, traits) compile down to the same machine code you would write by hand. Using a higher-level construct does not make your program slower.
 

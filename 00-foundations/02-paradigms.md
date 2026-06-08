@@ -1,4 +1,4 @@
-`[Entry]`
+``
 
 # Programming Paradigms
 

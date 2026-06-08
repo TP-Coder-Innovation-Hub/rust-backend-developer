@@ -1,10 +1,12 @@
-`[Entry]` `[Mid]`
+`` ``
 
 # Why Rust, Why Not X
 
 No language is best for everything. This file compares Rust against its closest alternatives honestly.
 
 ## Comparison Table
+
+> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust vs C++ Go Java comparison trade-off chart
 
 | Property | Rust | C++ | Go | Java |
 |----------|------|-----|-----|------|

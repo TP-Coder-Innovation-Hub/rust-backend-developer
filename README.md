@@ -92,4 +92,4 @@ You need basic computer literacy. No prior Rust, systems programming, or backend
 
 Start at 00-foundations. Read each file in order. Every module assumes you understand the previous one. Code examples explain what each line does. If you get stuck, re-read the previous file.
 
-`[Entry]` means fundamental concepts. `[Mid]` means patterns and trade-offs. `[Senior]` means architecture and internals.
+`` means fundamental concepts. `` means patterns and trade-offs. `` means architecture and internals.
