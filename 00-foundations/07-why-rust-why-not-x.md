@@ -6,7 +6,21 @@ No language is best for everything. This file compares Rust against its closest 
 
 ## Comparison Table
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust vs C++ Go Java comparison trade-off chart
+```mermaid
+quadrantChart
+    title Language Trade-offs
+    x-axis Low Safety --> High Safety
+    y-axis Slow Development --> Fast Development
+    quadrant-1 Best of both
+    quadrant-2 Safe but slow
+    quadrant-3 Avoid
+    quadrant-4 Fast but risky
+    Rust: [0.9, 0.3]
+    C++: [0.3, 0.4]
+    Go: [0.6, 0.7]
+    Java: [0.7, 0.7]
+    Python: [0.3, 0.9]
+```
 
 | Property | Rust | C++ | Go | Java |
 |----------|------|-----|-----|------|

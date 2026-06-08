@@ -8,7 +8,27 @@ Async Rust lets your program do other work while waiting for I/O operations (net
 
 A synchronous server handles one request at a time:
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — synchronous vs asynchronous server request timeline diagram
+```mermaid
+sequenceDiagram
+    participant Req1 as Request 1
+    participant Req2 as Request 2
+    participant Server as Sync Server
+    Note over Server: Request 1 blocks entire thread
+    Req1->>Server: Start (DB query)
+    Note right of Server: waiting...
+    Req2->>Server: Waiting...
+    Server-->>Req1: Done
+    Server->>Req2: Now starts
+    
+    participant Req3 as Request 3
+    participant Req4 as Request 4
+    participant AServer as Async Server
+    Req3->>AServer: Start (DB query)
+    Req4->>AServer: Start (DB query)
+    Note over AServer: Both queries run concurrently
+    AServer-->>Req3: Done
+    AServer-->>Req4: Done
+```
 
 ```
 Request 1: [wait for database] [send response]

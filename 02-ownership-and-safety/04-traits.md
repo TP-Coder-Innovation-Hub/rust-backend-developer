@@ -192,7 +192,19 @@ Step by step:
 
 ### Static vs Dynamic Dispatch
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust static dispatch vs dynamic dispatch vtable monomorphization
+```mermaid
+graph LR
+    subgraph "Static Dispatch (monomorphization)"
+        S1["fn foo<T: Draw>(item: T)"]
+        S1 --> S2["foo(Circle) → compiled"]
+        S1 --> S3["foo(Square) → compiled"]
+    end
+    subgraph "Dynamic Dispatch (vtable)"
+        D1["fn foo(item: &dyn Draw)"]
+        D1 --> D2["vtable lookup at runtime"]
+        D2 --> D3["call correct draw()"]
+    end
+```
 
 | Property | Generics (static) | Trait objects (dynamic) |
 |----------|-------------------|------------------------|

@@ -6,7 +6,19 @@ Lifetimes are Rust's way of ensuring references are always valid. The compiler t
 
 ## The Problem Lifetimes Solve
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust lifetimes scope diagram preventing dangling reference
+```mermaid
+graph TD
+    subgraph "Without lifetimes — DANGER"
+        R1["r = &x"]
+        X1["x dropped"]
+        R1 -->|"dangling!"| X1
+    end
+    subgraph "With lifetimes — SAFE"
+        X2["'a: x lives here"]
+        R2["'a: r must not outlive x"]
+        R2 -->|"compiler enforces"| X2
+    end
+```
 
 ```rust
 fn main() {

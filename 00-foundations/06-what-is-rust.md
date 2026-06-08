@@ -27,7 +27,16 @@ These guarantees are enforced at compile time. If your code would cause one of t
 
 ## Zero-Cost Abstractions
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust zero cost abstractions high level to machine code
+```mermaid
+flowchart LR
+    A["High-level Rust\niter().filter().map()"] --> B["Compiler optimizes"]
+    B --> C["Same machine code\nas hand-written loop"]
+    
+    D["Low-level C\nfor loop with index"] --> E["Compiler"]
+    E --> F["Machine code"]
+    
+    B -.->|"identical output"| F
+```
 
 Rust's abstractions (generics, iterators, traits) compile down to the same machine code you would write by hand. Using a higher-level construct does not make your program slower.
 

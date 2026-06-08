@@ -33,7 +33,17 @@ This is deterministic. You know exactly when memory is freed: when the owner lea
 
 ## Rule 3: Move Semantics
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust ownership move semantics stack heap pointer diagram
+```mermaid
+graph LR
+    subgraph Stack
+        S1["s1\nptr → 0x1\nlen: 5\ncap: 5"]
+        S2["s2\nINVALID"]
+    end
+    subgraph Heap
+        H["0x1: 'h','e','l','l','o'"]
+    end
+    S1 -->|"move"| H
+```
 
 ```rust
 fn main() {
@@ -119,7 +129,16 @@ fn main() {
 
 ## What Is Happening in Memory
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust String memory layout stack ptr len capacity heap
+```mermaid
+graph LR
+    subgraph Stack
+        S["String\nptr: 0x1000\nlen: 5\ncap: 5"]
+    end
+    subgraph Heap
+        H["0x1000: h\ne\nl\nl\no"]
+    end
+    S -->|"ptr"| H
+```
 
 ```
 let s1 = String::from("hello");

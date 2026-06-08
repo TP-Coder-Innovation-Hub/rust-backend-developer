@@ -58,7 +58,14 @@ The `&mut` symbol means "borrow this value for writing."
 
 ## The Borrow Rules
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust borrow checker rules multiple immutable OR one mutable reference
+```mermaid
+graph TD
+    A[Reference Rules] --> B["&T (immutable)\nMany allowed"]
+    A --> C["&mut T (mutable)\nOnly ONE allowed"]
+    B --> D["Multiple readers OK"]
+    C --> E["Exclusive writer OK"]
+    B -.->|"NOT with"| C
+```
 
 These two rules are enforced at compile time:
 

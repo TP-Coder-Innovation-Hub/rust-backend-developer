@@ -47,7 +47,22 @@ Values with size that changes at runtime go on the heap: strings (users can type
 
 ### Stack vs Heap Comparison
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — stack vs heap memory layout diagram program execution
+```mermaid
+graph LR
+    subgraph Stack
+        direction TB
+        S1["x = 5"]
+        S2["y = 10"]
+        S3["z = 15"]
+    end
+    subgraph Heap
+        direction TB
+        H1["Box: data at 0x1A2B"]
+        H2["String: bytes at 0x3C4D"]
+    end
+    S1 --> |"fast, LIFO"| Stack
+    H1 --> |"slow, dynamic"| Heap
+```
 
 | Property | Stack | Heap |
 |----------|-------|------|

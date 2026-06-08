@@ -51,7 +51,21 @@ fn main() {
 
 `Rc` (Reference Counted) is a single-threaded reference-counted pointer. It is not thread-safe because its reference count is not atomic. Two threads incrementing the count simultaneously would cause a data race.
 
-> 🖼️ **[IMAGE_PLACEHOLDER]** — Rust Rc vs Arc thread safety single thread multi thread diagram
+```mermaid
+graph LR
+    subgraph "Single Thread — Rc"
+        RC["Rc<T>\nnon-atomic ref count"]
+        T1["Thread 1 ✓"]
+        RC --- T1
+    end
+    subgraph "Multi Thread — Arc"
+        ARC["Arc<T>\natomic ref count"]
+        T2["Thread 1 ✓"]
+        T3["Thread 2 ✓"]
+        ARC --- T2
+        ARC --- T3
+    end
+```
 
 Fix: use `Arc` (Atomic Reference Counted) instead:
 
