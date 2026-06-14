@@ -225,7 +225,7 @@ sequenceDiagram
 
 ### 2.1 Frontend Justification
 
-One frontend: **Vue 3 moderation dashboard**. Content authors never see this system directly (their platform does); the human in the loop is the **Moderation Admin** tuning rules and auditing verdicts. The dashboard's real-time nature (SSE live feed, atomic-counter stats) is also the natural way to *demonstrate* the pipeline's concurrency — the capstone demo is the dashboard under a load generator.
+One frontend: **Vue 3 moderation dashboard**. Content authors never see this system directly (their platform does); the human in the loop is the **Moderation Admin** tuning rules and auditing verdicts. The dashboard's real-time nature (SSE live feed, atomic-counter stats) is also the natural way to *demonstrate* the pipeline's concurrency — the workshop demo is the dashboard under a load generator.
 
 ### 2.2 Route Map (Vue 3)
 
