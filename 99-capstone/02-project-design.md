@@ -1,6 +1,6 @@
 # Workshop Design: Content Moderation Pipeline
 
-> Companion to [01-capstone-spec.md](./01-capstone-spec.md). High-level and low-level design: diagrams, contracts, schemas. **Code organization is yours** — crates, modules, workspace layout are learner decisions.
+> Companion to [01-workshop-spec.md](./01-workshop-spec.md). High-level and low-level design: diagrams, contracts, schemas. **Code organization is yours** — crates, modules, workspace layout are learner decisions.
 
 ## Design Notes (read first)
 
