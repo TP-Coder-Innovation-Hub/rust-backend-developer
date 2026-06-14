@@ -1,4 +1,4 @@
-# Capstone: Content Moderation Pipeline
+# Workshop: Content Moderation Pipeline
 
 Build a high-throughput content moderation system that processes user-submitted text through a concurrent rule evaluation pipeline. This mirrors real-world systems that must make sub-millisecond decisions at scale — the kind of workload where Rust's zero-cost abstractions, lack of GC pauses, and fearless concurrency deliver measurable advantages.
 
