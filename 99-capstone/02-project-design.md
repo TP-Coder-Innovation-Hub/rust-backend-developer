@@ -250,7 +250,7 @@ Pinia stores: `auth` (admin key), `stats` (SSE-fed reactive state), `rules`.
 | Rule editor | Per-variant form (`Keyword`: word chips; `Regex`: pattern + live server-side validation; `Length`: max chars; `RateLimit`: quota + window). Submit → 422 from server displays per-field errors — the server is the only judge of regex validity (zero-panic guarantee) |
 | Rule toggle | Optimistic switch flip; revert + toast on failure. Banner notes "takes effect on next item — no restart" |
 | Decision log filters | Server-side filtering; URL query mirrors filter state for shareable investigation links |
-| Load-demo affordance | Dashboard shows current mpsc depth via stats (`queue_depth`); during the 10k-item benchmark the admin watches backpressure live — this is the money shot of the capstone demo |
+| Load-demo affordance | Dashboard shows current mpsc depth via stats (`queue_depth`); during the 10k-item benchmark the admin watches backpressure live — this is the money shot of the workshop demo |
 
 ---
 
