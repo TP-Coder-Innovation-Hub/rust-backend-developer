@@ -6,7 +6,7 @@
 
 1. **The "message broker" is in-process.** Unlike a Kafka-based system, the pipeline stages communicate over `tokio` channels inside one binary. Part 5 therefore documents *channel contracts* (message types, capacity, lag semantics) plus the two contracts that cross the process boundary: SSE and webhooks. Treat channel payload types with the same rigor you'd give a Kafka schema.
 2. **Three additions the spec implies but doesn't define** — the dashboard needs them: `GET /api/v1/content/{id}` (look up a decision by tracking ID — the 202 response is useless without it), `GET /api/v1/decisions` (searchable audit log), and a `rule_changes` table (the spec requires "rule changes are logged" but defines no table). All three are designed below.
-3. **Auth is a static admin API key.** AuthN/AuthZ is not a learning objective of this capstone; a single `X-Admin-Key` header on `/admin/*`, `/decisions*`, `/stats`, and `/stream` keeps the focus on concurrency. The public surface is only `POST /api/v1/content` and `GET /api/v1/content/{id}`.
+3. **Auth is a static admin API key.** AuthN/AuthZ is not a learning objective of this workshop; a single `X-Admin-Key` header on `/admin/*`, `/decisions*`, `/stats`, and `/stream` keeps the focus on concurrency. The public surface is only `POST /api/v1/content` and `GET /api/v1/content/{id}`.
 4. **Rate limiting is a verdict, not a 429.** Per the spec, `RateLimit` is a rule type: over-quota submissions are accepted (202) and then `Block`ed by the pipeline, leaving an audit record. Ingestion only rejects on validation (400) or backpressure (503). This is a deliberate, auditable design — call it out in your README.
 
 ---
