@@ -20,7 +20,7 @@ You need basic computer literacy. No prior Rust, systems programming, or backend
 | 03 | [Concurrency and Ecosystem](03-concurrency-and-ecosystem/) | Crates, async, Send/Sync | Mid |
 | 04 | [Backend Fundamentals](04-backend-fundamentals/) | HTTP, REST, Axum, SQLx, auth | Mid |
 | 05 | [Production](05-production/) | Testing, logging, deployment | Mid–Senior |
-| 06 | [Capstone](06-capstone/README.md) | Build a memory-safe API end to end | Mid |
+| 06 | [Workshop](06-workshop/README.md) | Build a memory-safe API end to end | Mid |
 
 ## Full Topic List
 
