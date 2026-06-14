@@ -228,4 +228,4 @@ async fn main() {
 
 ## Next
 
-The capstone project in the next module brings everything together: build a complete memory-safe API.
+The workshop project in the next module brings everything together: build a complete memory-safe API.
