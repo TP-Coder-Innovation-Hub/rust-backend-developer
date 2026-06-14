@@ -93,6 +93,6 @@ rust-backend-developer/
     01-testing.md                            # Unit, handler, integration tests.
     02-logging-and-monitoring.md             # tracing crate, structured logging.
     03-deployment.md                         # Static binary, Docker, small images.
-  06-capstone/
+  06-workshop/
     README.md                                # Project spec: memory-safe task API.
 ```
