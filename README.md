@@ -86,7 +86,7 @@ You need basic computer literacy. No prior Rust, systems programming, or backend
 
 | File | Topic |
 |------|-------|
-| [README.md](06-capstone/README.md) | Project spec: build a memory-safe API. |
+| [README.md](06-workshop/README.md) | Project spec: build a memory-safe API. |
 
 ## How to Use This Guide
 
