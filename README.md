@@ -82,7 +82,7 @@ You need basic computer literacy. No prior Rust, systems programming, or backend
 | [02-logging-and-monitoring.md](05-production/02-logging-and-monitoring.md) | tracing crate, structured logging. |
 | [03-deployment.md](05-production/03-deployment.md) | Static binary, Docker, small images. |
 
-### 06 — Capstone
+### 06 — Workshop
 
 | File | Topic |
 |------|-------|
