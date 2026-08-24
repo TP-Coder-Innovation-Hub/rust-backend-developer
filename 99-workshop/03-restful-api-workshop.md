@@ -262,7 +262,3 @@ You now have a small but honest production API. Natural next steps:
 - Observability — metrics and health details, not just `/livez`
 
 The deeper workshop in this repo — [Content Moderation Pipeline](./01-workshop-spec.md) — picks up where this one ends: concurrency, channels, and benchmarking.
-
----
-
-*Structure inspired by the [Learning Rust Laboratory](https://learning-rust.github.io/labs/overview/) RESTful API series. This spec is our own condensed version — sqlx over Toasty, spec-driven over walkthrough.*
